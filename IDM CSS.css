@@ -1,0 +1,415 @@
+body {
+    font-family: "Segoe UI", Geneva, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #3F414B;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-width: 270px;
+}  
+
+.grid-container {
+    margin-top: -65px;
+    display: grid;
+    gap: 18px 5px;
+    grid-template-columns: .3fr 4fr repeat(7, .85fr) repeat(2, 1.25fr);
+    grid-template-rows: min-content;
+    align-items: center;
+    position: fixed;
+    background-color: whitesmoke;
+    visibility: visible;
+    z-index: 1000;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item-ico {
+    text-align: left;
+}
+
+.gico {
+    width: 100%;
+    height: 100%;
+}
+
+.head-banner {
+    background: url("images/head-banner.jpg");
+    background-size: cover;
+    background-position: top center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 65px;
+}
+
+.banner-text {
+    color: #eeeeee;
+}
+
+.button{
+    background-color: #1FB393;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 20px 12px 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid #1FB393;
+    display: inline-block;
+    transition-duration: 1s;
+    transition-property: box-shadow, border-color, background-color, color;
+}
+
+.head-button {
+    margin: 7.5%;
+    width: max-content;
+    height: min-content;
+}
+
+.trial {
+    background-color: #fff;
+    color: #1FB393;
+}
+
+.desc {
+    width: 94%;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.subcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 20px 60px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "T1 P1"
+      "P2 T2"
+      "T3 P3"
+      "P4 T4"
+      "T5 P5"
+      "P6 T6"
+      "T7 P7"
+      "P8 T8";
+    width: 65%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .T1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT1"
+      "TP1";
+    justify-self: stretch;
+    grid-area: T1;
+    margin-right: 2.5%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+  }
+  
+  .TT1 {
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT1;
+  }
+  
+  .TP1 {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP1;
+  }
+  
+  .T2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT2"
+      "TP2";
+    grid-area: T2;
+    margin-right: 10%;
+    margin-left: 2.5%;
+    margin-bottom: 15%;
+  }
+  
+  .TT2 {
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT2;
+  }
+  
+  .TP2 {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP2;
+  }
+  
+  .T3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, calc(2/3)fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT3A"
+      "TT3"
+      "TP3";
+    grid-area: T3;
+    justify-self: center; 
+    align-self: stretch; 
+    width: 75%; 
+    margin-right: 2.5%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .TT3A {
+    justify-self: center; 
+    align-self: end; 
+    grid-area: TT3A; 
+  }
+
+  .TT3 {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: TT3; 
+  }
+
+  .TP3 {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: TP3; 
+  }
+  
+  .T4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT4"
+      "TP4";
+    grid-area: T4;
+    margin-right: 10%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+  }
+  
+  .TT4 {
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT4;
+  }
+  
+  .TP4 {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP4;
+  }
+  
+  .T5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT5"
+      "TP5";
+    grid-area: T5;
+    margin-right: 2.5%;
+    margin-left: 10%
+  }
+  
+  .TT5 {
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT5;
+  }
+  
+  .TP5 {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP5;
+  }
+  
+  .T6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT6"
+      "TP6";
+    grid-area: T6;
+    margin-right: 10%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+  }
+  
+  .TT6 {
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT6;
+  }
+  
+  .TP6 {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP6;
+  }
+  
+  .T7 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT7"
+      "TP7";
+    grid-area: T7;
+    margin-left: 20%;
+    margin-right: 12.5%;
+    margin-bottom: 2.5%;
+  }
+  
+  .TT7 {
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT7;
+  }
+  
+  .TP7 {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP7;
+  }
+  
+  .T8 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT8"
+      "TP8";
+    grid-area: T8;
+    margin-right: 10%;
+    margin-left: 12.5%;
+    margin-bottom: 15%;
+  }
+  
+  .TT8 {
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT8;
+  }
+  
+  .TP8 {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP8;
+  }
+  
+  .P1 { grid-area: P1; margin-top: 5.5%; margin-bottom: -5.5%; margin-right: 5%; margin-left: -5%; }
+  
+  .P2 { grid-area: P2; margin-top: 0%; margin-bottom: 0%; margin-right: -10%; margin-left: 20%; }
+  
+  .P3 { grid-area: P3; margin-top: 0%; margin-bottom: 0%; margin-right: 5%; margin-left: -5%; }
+  
+  .P4 { grid-area: P4; margin-top: 0%; margin-bottom: 0%; margin-right: -5%; margin-left: 5%; }
+  
+  .P5 { grid-area: P5; margin-top: 0%; margin-bottom: 0%; margin-right: 5%; margin-left: -5%; }
+  
+  .P6 { grid-area: P6; margin-top: 10%; margin-bottom: -5%; margin-right: -5%; margin-left: 5%; }
+  
+  .P7 { grid-area: P7; margin-top: 7.5%; margin-bottom: -2.5%; margin-right: 5%; margin-left: -5%; }
+  
+  .P8 { grid-area: P8; margin-top: 2.5%; margin-bottom: -7.5%; margin-right: -5%; margin-left: 5%; }
+
+.restrained {
+    position: relative;
+    z-index: 1;
+    display: block;
+    max-height: 520px;
+    box-shadow: 0 30px 45px -10px rgb(0 0 0 / 20%);
+    max-width: calc(48vw - 30px);
+    height: auto;
+}
+
+.tmultiple {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: justify;
+    transition-duration: 0.5s;
+}
+
+.pmultiple {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0F5DB1;
+    transition-duration: 0.5s;
+    transition-property: color;
+}
+
+a:hover {
+    background-color: #fffcfc;
+    color: #0e549e;
+}
+
+.opacity {
+    opacity: 0.5;
+    font-size: 13px;
+}
